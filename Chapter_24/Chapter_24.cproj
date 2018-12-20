@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>7.0</ProjectVersion>
     <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
-    <ProjectGuid>{e7752492-836b-49a1-a71b-89f8c437c28b}</ProjectGuid>
+    <ProjectGuid>{88066256-67a6-4ccb-b8b1-e275c12150e8}</ProjectGuid>
     <avrdevice>ATmega328P</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
     <OutputType>Executable</OutputType>
@@ -12,9 +12,9 @@
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>Chapter_20</AssemblyName>
-    <Name>Chapter_20</Name>
-    <RootNamespace>Chapter_20</RootNamespace>
+    <AssemblyName>Chapter_24</AssemblyName>
+    <Name>Chapter_24</Name>
+    <RootNamespace>Chapter_24</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
@@ -134,18 +134,22 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="digit.c">
+    <Compile Include="FND99.c">
       <SubType>compile</SubType>
     </Compile>
-    <None Include="light_on.c">
+    <None Include="led.c">
       <SubType>compile</SubType>
     </None>
-    <None Include="smile.c">
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FND9.c">
       <SubType>compile</SubType>
     </None>
-    <Compile Include="LEDMatrixTest.h">
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LED16.c">
       <SubType>compile</SubType>
-    </Compile>
+    </None>
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>
